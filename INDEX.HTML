@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>RB servicio tecnico</title>
+    <link rel="icon" type="image/png" href="icono.png" />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        background-color: #002244;
+        background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+        background-blend-mode: overlay;
+        background-repeat: repeat;
+        background-size: auto;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 20px;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .logo img {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+      }
+
+      .menu a {
+        color: #00d1ff;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .menu a:hover {
+        text-decoration: underline;
+      }
+
+      section {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 20px;
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        color: #00d1ff;
+        border-bottom: 2px solid #00d1ff;
+        padding-bottom: 10px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      li::before {
+        content: "\2022 ";
+        color: #00d1ff;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .whatsapp-button {
+        display: inline-block;
+        background-color: #25d366;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      .galeria-productos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .producto img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .producto p {
+        margin: 10px 0;
+        font-weight: bold;
+      }
+
+      .producto a {
+        display: inline-block;
+        margin-top: 5px;
+        padding: 8px 12px;
+        background-color: #25d366;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .producto a:hover {
+        background-color: #1eb14a;
+      }
+
+      .instagram {
+        margin-top: 10px;
+      }
+
+      .servicios-flex {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .bloque-servicio {
+        flex: 1;
+        min-width: 300px;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 20px;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="logo.jpeg.jpeg" alt="Logo RB" />
+        <h1>Servicio Técnico RB</h1>
+      </div>
+      <nav class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#servicios">Servicios</a>
+      </nav>
+      <div class="info-header">
+        <ul>
+          <h2>Somos de:</h2>
+          <li>📍 GDOR ROCA, MISIONES 🇦🇷</li>
+          <li>🌍 Productos internacionales 🇧🇷🇵🇾</li>
+        </ul>
+      </div>
+    </header>
+    <h2>
+      En Servicio Técnico RB nos especializamos en la venta de productos
+      confiables, instalaciones eléctricas, mantenimiento de aires
+      acondicionados, y un amplio catálogo de herramientas profesionales.
+    </h2>
+    <section id="servicios" class="servicios-flex">
+      <div class="bloque-servicio">
+        <h2>❄ Aires Acondicionados.</h2>
+        <ul>
+          <li>Frío-Calor.</li>
+          <li>3.000 F</li>
+          <li>4.500 F</li>
+          <li>6.000 F</li>
+          <li>Instalación y desinstilación.</li>
+          <li>Mantenimientos preventivos y correctivos.</li>
+          <li>Reparaciones y carga de gas.</li>
+          <li>Venta de equipos</li>
+        </ul>
+      </div>
+      <div class="bloque-servicio">
+        <h2>⚡ Electricidad Domiciliaria.</h2>
+        <ul>
+          <li>Instalaciones en general</li>
+          <li>Reparaciones</li>
+          <li>Mantenimientos</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="productos">
+      <h2>Nuestros productos.</h2>
+      <h2>🛒 Venta por mayor y menor /💰 Con seña anticipada.</h2>
+      <div class="galeria-productos">
+        <div class="producto">
+          <img src="imagen/216piezas.jpeg.jpeg" alt="producto 1" />
+          <p>Caja de herramientas 216 piezas</p>
+          <a href="https://wa.me/c/5493764135251" target="_blank"
+            >Ver catálogo</a
+          >
+        </div>
+
+        <div class="producto">
+          <img src="imagen/estuchepiezas.jpeg.jpeg" alt="Producto 2" />
+          <p>Caja de herramientas CHROME VANADIUM</p>
+          <a href="https://wa.me/c/5493764135251" target="_blank"
+            >Ver catálogo</a
+          >
+        </div>
+
+        <div class="producto">
+          <img src="imagen/estuchetotal.jpeg.jpeg" alt="Producto 3" />
+          <p>Caja de herramientas TOTAL con taladro percutor inalambrico</p>
+          <a href="https://wa.me/c/5493764135251" target="_blank"
+            >Ver catálogo</a
+          >
+        </div>
+        <div class="producto">
+          <img src="imagen/circular.jpeg.jpeg" alt="Producto 4" />
+          <p>Sierra circular industrial TOTAL</p>
+          <a href="https://wa.me/c/5493764135251" target="_blank"
+            >Ver catálogo</a
+          >
+        </div>
+        <div class="producto">
+          <img src="imagen/percutor.jpeg.jpeg" alt="Producto 5" />
+          <p>
+            Kit combinado de taladro/atornillador de impacto inalámbrico 20V
+            INGCO
+          </p>
+          <a href="https://wa.me/c/5493764135251" target="_blank"
+            >Ver catálogo</a
+          >
+        </div>
+        <div class="producto">
+          <img src="imagen/aire.jpeg.jpeg" alt="Producto 6" />
+          <p>Aire acondicionado split GOODWEATHER frio/calor</p>
+          <a href="https://wa.me/c/5493764135251" target="_blank"
+            >Ver catálogo</a
+          >
+      </div>
+    </section>
+
+    <section>
+      <h2>¿No sabés qué producto elegir? Te ayudamos a decidir.</h2>
+      <h2>🕰️ Envíos de 3 a 5 días.</h2>
+      <ul>
+        <li>✅ Equipos de climatización de primeras marcas.</li>
+        <li>✅ Herramientas resistentes y listas para el trabajo diario.</li>
+        <li>✅ Asesoramiento personalizado y atención postventa.</li>
+        <li>✅ Envíos, instalaciones y cotizaciones rápidas por WhatsApp</li>
+        <h3>
+          👉 Explorá nuestros productos y descubrí todo lo que tenemos para vos.
+        </h3>
+        <li>📦 Pedidos por privado a los administradores</li>
+        <div class="producto">
+          <a href="https://wa.me/c/5493764135251" target="_blank"
+            >Ver catálogo</a
+          >
+        </div>
+      </ul>
+    </section>
+
+    <footer>
+      <p>📲 Cotizá tu servicio al <strong>3764 135251</strong></p>
+      <a
+        class="whatsapp-button"
+        href="https://wa.me/543764135251"
+        target="_blank"
+        >Enviar WhatsApp</a
+      >
+      <div class="instagram">
+        Seguinos en Instagram:
+        <a
+          href="https://instagram.com/servicio_tecnico_rb"
+          target="_blank"
+          style="color: #00d1ff"
+          >@servicio_tecnico_rb</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
